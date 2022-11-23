@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage{etoolbox}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\include{math-shortcuts.tex}
+
+% definitions
+\usepackage{xifthen}
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{todocolor}{rgb}{0, 205, 0}
+\definecolor{commentcolor}{rgb}{0,0,205}
+\definecolor{questioncolor}{rgb}{200,0,0}
+
+\renewenvironment{comment}{\color{commentcolor}}{}
+\newcommand{\question}[1]{\textcolor{questioncolor}{\textbf{QUESTION:} #1}}
+\newcommand{\todo}[1]{\textcolor{todocolor}{\textbf{TODO:} #1}}
+\newcommand{\Note}[1]{\textcolor{commentcolor}{\textbf{Note:} #1}}
+\newcommand{\Important}{\textbf{Important:} }
+\newcommand{\Proof}{\textbf{Proof:} }
+
+
+\title{Cheatsheet Template}
+\author{Pius Kriemler}
+\date{2022}
+
+\newtoggle{showcomments}
+\toggletrue{showcomments}
+
+\begin{document}
+
+\end{document}
